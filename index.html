@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <nav id="desktop-nav" class="desktop-nav-container">
+        <div class="logo">AsserG</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">AsserG</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/images/Avatar.png" alt="">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Asser Girma</h1>
+            <p class="section__text__p2">3D Modeller</p>
+        </div>
+        <div class="btn-container">
+            <button class="btn btn-color1" onclick="location.href='./#contact'">
+                Contact Info    
+            </button>
+            <button class="btn btn-color2" onclick="window.open('./assets/cv/asser_cv.pdf')">
+                Open CV
+            </button>
+        </div>
+    </section>
+    <section id="about">
+        <div class="section_text">
+            <h1 class="title">About Me</h1>                
+            <p class="section__text__p2">
+                 I am a Year 10 student currently studying for my GCSE courses
+            </p>
+            <p class="section__text__p2">I am a self-taught 3D Modeller and Software Developer</p>
+            <p></p>
+        </div>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/images/CircleBilly.png" alt="" class="image-center">
+            </div>
+            <p class="section__text__p3">
+                Over the years, I have been improving my modelling skills in blender
+                mainly focusing on weapon design.
+            </p>
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
